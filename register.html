@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+        <title>Register</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container content-form">
+        <h1>Registration Form</h1>
+        <hr>
+        <form class="customForm" action="/register" method="POST"><br>
+            <label for="name">Enter your name</label>
+            <br>
+            <input type="text" name="name" value="">
+            <br><br>
+            <label for="username">Enter your name</label>
+            <br>
+            <input type="text" name="username" value="">
+            <br><br>
+            <label for="email">Enter your email</label>
+            <br>
+            <input type="email" name="email" value="">
+            <br><br>
+            
+            <label for="password">Enter password</label>
+            <br>
+            <input type="password" name="password" value="">
+            <br><br>
+            <label for="confirm-password">Confirm password</label>
+            <br>
+            <input type="password" name="confirm" value="">
+            <br><br>
+            <button class="btn btn-primary" type="submit">Register</button>
+            <br>
+            <p>Already have an account? <a href="#">Login instead.</a></p>
+        </form>
+        
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
